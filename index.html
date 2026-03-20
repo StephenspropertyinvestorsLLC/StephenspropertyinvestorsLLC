@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your House Fast for Cash - Stephens Property Investors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0052cc 0%, #0066ff 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 82, 204, 0.2);
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-container img {
+            max-width: 140px;
+            height: auto;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header-text .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .header-text .tagline {
+            font-size: 1.8rem;
+            opacity: 1;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+        }
+
+        .benefit {
+            text-align: center;
+            padding: 2rem;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border: 2px solid #e0edff;
+            box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 82, 204, 0.15);
+        }
+
+        .benefit h3 {
+            color: #0052cc;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        /* Form Section */
+        .form-container {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 82, 204, 0.1);
+            margin: 3rem 0;
+        }
+
+        .form-container h2 {
+            color: #0052cc;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .form-section:last-child {
+            border-bottom: none;
+        }
+
+        .form-section h3 {
+            color: #0052cc;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 2px solid #e0edff;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #0052cc;
+            box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #0052cc;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        button {
+            background: linear-gradient(135deg, #0052cc 0%, #0066ff 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 82, 204, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Alert */
+        #alert {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        #alert.show {
+            display: block;
+        }
+
+        #alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        #alert.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 82, 204, 0.1);
+            margin: 3rem 0;
+        }
+
+        .faq-section h2 {
+            color: #0052cc;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 2px solid #e0edff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f0f7ff;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 82, 204, 0.1);
+            border-color: #0052cc;
+        }
+
+        .faq-item h4 {
+            color: #0052cc;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-item span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .faq-item p {
+            margin: 1rem 0 0 0;
+            display: none;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #0052cc;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            box-shadow: 0 -5px 20px rgba(0, 82, 204, 0.1);
+        }
+
+        footer a {
+            color: #e0edff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Stephens Property Investors Logo">
+            </div>
+            <div class="header-text">
+                <div class="tagline">I help homeowners navigate quick sales with care, clarity, and no pressure.</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="benefit">
+                <h3>⚡ Fast Cash</h3>
+                <p>Get a cash offer in as little as 24 hours</p>
+            </div>
+            <div class="benefit">
+                <h3>🏠 As-Is Sales</h3>
+                <p>No repairs or renovations needed</p>
+            </div>
+            <div class="benefit">
+                <h3>💯 No Hidden Fees</h3>
+                <p>Transparent pricing, no surprises</p>
+            </div>
+            <div class="benefit">
+                <h3>📋 Simple Process</h3>
+                <p>Easy steps from offer to closing</p>
+            </div>
+        </section>
+
+        <!-- Alert -->
+        <div id="alert"></div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2>Get Your Free Cash Offer</h2>
+            <form onsubmit="submitForm(event)">
+                <!-- Contact Info -->
+                <div class="form-section">
+                    <h3>📞 Contact Information</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Contact Method *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="emailPref" name="contactMethod" value="email" required checked>
+                                <label for="emailPref">📧 Email</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="phonePref" name="contactMethod" value="phone">
+                                <label for="phonePref">☎️ Phone</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bestTime">Best Time to Contact</label>
+                        <input type="text" id="bestTime" name="bestTime" placeholder="e.g., Weekdays after 5pm">
+                    </div>
+                </div>
+
+                <!-- Property Type -->
+                <div class="form-section">
+                    <h3>🏠 Property Information</h3>
+
+                    <div class="form-group">
+                        <label>Property Type *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="single" name="propertyType" value="Single-family home" required>
+                                <label for="single">Single-family home</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="condo" name="propertyType" value="Condo/Townhouse">
+                                <label for="condo">Condo/Townhouse</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="multi" name="propertyType" value="Multi-family">
+                                <label for="multi">Multi-family</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="land" name="propertyType" value="Land">
+                                <label for="land">Land</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="Street address">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State *</label>
+                            <input type="text" id="state" name="state" required placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code *</label>
+                            <input type="text" id="zip" name="zip" required placeholder="ZIP">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Details -->
+                <div class="form-section">
+                    <h3>📏 Property Details</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms *</label>
+                            <input type="number" id="bedrooms" name="bedrooms" required min="0" placeholder="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="bathrooms">Bathrooms *</label>
+                            <input type="number" id="bathrooms" name="bathrooms" required min="0" step="0.5" placeholder="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="sqft">Square Footage</label>
+                            <input type="number" id="sqft" name="sqft" placeholder="Square footage">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Condition *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="moveIn" name="condition" value="Move-in ready" required>
+                                <label for="moveIn">Move-in ready</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="good" name="condition" value="Good condition">
+                                <label for="good">Good condition</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="minor" name="condition" value="Needs minor repairs">
+                                <label for="minor">Needs minor repairs</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="major" name="condition" value="Needs major repairs">
+                                <label for="major">Needs major repairs</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seller Info -->
+                <div class="form-section">
+                    <h3>📋 Seller Information</h3>
+
+                    <div class="form-group">
+                        <label>Why are you selling? *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="relocate" name="reason" value="Relocating">
+                                <label for="relocate">Relocating</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="financial" name="reason" value="Financial reasons">
+                                <label for="financial">Financial reasons</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="inherited" name="reason" value="Inherited property">
+                                <label for="inherited">Inherited</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="rental" name="reason" value="Rental property">
+                                <label for="rental">Rental property</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="downsize" name="reason" value="Downsizing">
+                                <label for="downsize">Downsizing</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Timeline *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="asap" name="timeline" value="ASAP" required>
+                                <label for="asap">ASAP</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="30days" name="timeline" value="Within 30 days">
+                                <label for="30days">Within 30 days</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="3months" name="timeline" value="1-3 months">
+                                <label for="3months">1-3 months</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="6months" name="timeline" value="3-6 months">
+                                <label for="6months">3-6 months</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Occupancy Status *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="ownerOcc" name="occupancy" value="Owner occupied" required>
+                                <label for="ownerOcc">Owner occupied</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="tenant" name="occupancy" value="Tenant occupied">
+                                <label for="tenant">Tenant occupied</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="vacant" name="occupancy" value="Vacant">
+                                <label for="vacant">Vacant</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">💰 Get My Cash Offer</button>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>How long does the process take? <span>⬇️</span></h4>
+                <p>We typically provide a cash offer within 24 hours of submitting your information. Once you accept our offer, we can close in as little as 7-14 days, depending on your timeline and any legal requirements.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>Do you buy houses in any condition? <span>⬇️</span></h4>
+                <p>Yes! We buy houses as-is, whether they need repairs or not. You don't need to worry about fixing anything up. We handle all the repairs and renovations after purchase.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>Are there any hidden fees or commissions? <span>⬇️</span></h4>
+                <p>No. We believe in complete transparency. Our offer is what you get at closing. There are no agent commissions, closing costs, or hidden fees. What we offer is what you keep.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>What if I still have a mortgage? <span>⬇️</span></h4>
+                <p>No problem! We can pay off your existing mortgage from the sale proceeds. You'll walk away with the remaining cash in your pocket.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>How do you determine your offer price? <span>⬇️</span></h4>
+                <p>We evaluate the property's condition, location, current market value, and potential for improvement. Our goal is to make you a fair offer quickly while accounting for our renovation costs and market conditions.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h4>Is there any obligation to accept your offer? <span>⬇️</span></h4>
+                <p>Not at all! Getting our offer is completely free and comes with no obligation. Review it, compare it to other options, and decide what's best for you.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stephens Property Investors LLC. All rights reserved.</p>
+        <p>Questions? Call us at <a href="tel:"></a></p>
+    </footer>
+
+    <script>
+        // Toggle FAQ answers
+        function toggleFAQ(element) {
+            const answer = element.querySelector('p');
+            const icon = element.querySelector('span');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item p').forEach(p => {
+                if (p !== answer) p.style.display = 'none';
+            });
+            document.querySelectorAll('.faq-item span').forEach(span => {
+                if (span !== icon) span.style.transform = 'rotate(0deg)';
+            });
+
+            // Toggle current FAQ
+            if (answer.style.display === 'none' || !answer.style.display) {
+                answer.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        async function submitForm(e) {
+            e.preventDefault();
+            const alertDiv = document.getElementById('alert');
+            alertDiv.classList.remove('success', 'error', 'show');
+
+            try {
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData.entries());
+
+                const response = await fetch('http://localhost:5000/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    const lead = result.lead;
+
+                    // Display automatic success message
+                    const successHTML = `
+                        <div style="background: #d4edda; color: #155724; padding: 2rem; border-radius: 10px; border: 2px solid #c3e6cb;">
+                            <h2 style="margin-top: 0; font-size: 1.8rem;">🎉 Cash Offer Request Submitted!</h2>
+                            <p style="font-size: 1.1rem; margin: 1rem 0;">Your information has been automatically sent to our team.</p>
+
+                            <div style="background: #e8f5e9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #0052cc; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #0052cc;">✅ What Happens Next:</h3>
+                                <ul style="margin: 0; padding-left: 1.5rem;">
+                                    <li style="margin: 0.5rem 0;"><strong>Email Sent:</strong> Your property details have been emailed to <strong>StephenspiLLC@gmail.com</strong></li>
+                                    <li style="margin: 0.5rem 0;"><strong>24-Hour Response:</strong> You'll hear from us within 24 hours with your cash offer</li>
+                                    <li style="margin: 0.5rem 0;"><strong>Questions?</strong> Call <strong></strong> anytime</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: white; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; color: #333;">
+                                <h4 style="color: #0052cc; margin-top: 0;">📋 Your Submission Summary</h4>
+
+                                <div style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd;">
+                                    <h5 style="color: #0052cc; margin: 0 0 0.5rem 0;">👤 Contact Info</h5>
+                                    <p style="margin: 0.3rem 0;"><strong>Name:</strong> ${lead.name}</p>
+                                    <p style="margin: 0.3rem 0;"><strong>Phone:</strong> ${lead.phone}</p>
+                                    <p style="margin: 0.3rem 0;"><strong>Email:</strong> ${lead.email}</p>
+                                </div>
+
+                                <div style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd;">
+                                    <h5 style="color: #0052cc; margin: 0 0 0.5rem 0;">🏠 Property Details</h5>
+                                    <p style="margin: 0.3rem 0;"><strong>Address:</strong> ${lead.address}, ${lead.city}, ${lead.state} ${lead.zip}</p>
+                                    <p style="margin: 0.3rem 0;"><strong>Type:</strong> ${lead.propertyType} | <strong>Beds:</strong> ${lead.bedrooms} | <strong>Baths:</strong> ${lead.bathrooms}</p>
+                                    <p style="margin: 0.3rem 0;"><strong>Condition:</strong> ${lead.condition}</p>
+                                    <p style="margin: 0.3rem 0;"><strong>Timeline:</strong> ${lead.timeline}</p>
+                                </div>
+
+                                <div>
+                                    <h5 style="color: #0052cc; margin: 0 0 0.5rem 0;">📞 Contact Preference</h5>
+                                    <p style="margin: 0;"><strong>${lead.contactMethod === 'email' ? '📧 Email' : '☎️ Phone'}</strong></p>
+                                </div>
+                            </div>
+
+                            <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 8px; border: 2px solid #0066cc;">
+                                <p style="margin: 0; color: #0033aa;"><strong>💡 Tip:</strong> Check your email (including spam folder) for confirmation and updates about your cash offer.</p>
+                            </div>
+
+                            <p style="margin: 1.5rem 0 0 0; text-align: center; color: #666;">
+                                <strong>Questions?</strong> Call us at <a href="tel:" style="color: #0066cc; font-weight: bold; text-decoration: none;"></a>
+                            </p>
+                        </div>
+                    `;
+
+                    alertDiv.innerHTML = successHTML;
+                    alertDiv.classList.add('success', 'show');
+                    alertDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    e.target.reset();
+                    document.getElementById('emailPref').checked = true;
+                } else {
+                    throw new Error('Failed to submit');
+                }
+            } catch (error) {
+                alertDiv.innerHTML = '❌ Error submitting form. Please try again or call .';
+                alertDiv.classList.add('error', 'show');
+            }
+        }
+    </script>
+</body>
+</html>
