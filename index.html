@@ -28,14 +28,14 @@
         }
 
         .header-content {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 2rem 20px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            gap: 1.5rem;
         }
 
         .logo-container {
@@ -43,9 +43,15 @@
         }
 
         .logo-container img {
-            max-width: 140px;
+            max-width: 400px;
+            width: 100%;
             height: auto;
-            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+        }
+
+        .header-text {
+            text-align: center;
+            max-width: 800px;
         }
 
         .header-text h1 {
@@ -62,12 +68,13 @@
         }
 
         .header-text .tagline {
-            font-size: 1.8rem;
+            font-size: 2rem;
             opacity: 1;
             font-style: italic;
             font-weight: 600;
-            line-height: 1.4;
+            line-height: 1.5;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 0;
         }
 
         .container {
@@ -345,7 +352,7 @@
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <img src="logo.png.jpeg" alt="Stephens Property Investors Logo">
+                <img src="logo.png" alt="Stephens Property Investors Logo">
             </div>
             <div class="header-text">
                 <div class="tagline">I help homeowners navigate quick sales with care, clarity, and no pressure.</div>
@@ -354,26 +361,6 @@
     </header>
 
     <div class="container">
-        <!-- Benefits Section -->
-        <section class="benefits">
-            <div class="benefit">
-                <h3>⚡ Fast Cash</h3>
-                <p>Get a cash offer in as little as 24 hours</p>
-            </div>
-            <div class="benefit">
-                <h3>🏠 As-Is Sales</h3>
-                <p>No repairs or renovations needed</p>
-            </div>
-            <div class="benefit">
-                <h3>💯 No Hidden Fees</h3>
-                <p>Transparent pricing, no surprises</p>
-            </div>
-            <div class="benefit">
-                <h3>📋 Simple Process</h3>
-                <p>Easy steps from offer to closing</p>
-            </div>
-        </section>
-
         <!-- Alert -->
         <div id="alert"></div>
 
@@ -619,6 +606,34 @@
                 <p>Not at all! Getting our offer is completely free and comes with no obligation. Review it, compare it to other options, and decide what's best for you.</p>
             </div>
         </div>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="benefit">
+                <h3>⚡ Fast Cash</h3>
+                <p>Get a cash offer in as little as 24 hours</p>
+            </div>
+            <div class="benefit">
+                <h3>🏠 As-Is Sales</h3>
+                <p>No repairs or renovations needed</p>
+            </div>
+            <div class="benefit">
+                <h3>💯 No Hidden Fees</h3>
+                <p>Transparent pricing, no surprises</p>
+            </div>
+            <div class="benefit">
+                <h3>📋 Simple Process</h3>
+                <p>Easy steps from offer to closing</p>
+            </div>
+            <div class="benefit">
+                <h3>💰 Fair Offers</h3>
+                <p>We provide competitive cash offers on the spot</p>
+            </div>
+            <div class="benefit">
+                <h3>✅ No Hassle</h3>
+                <p>Avoid showings, inspections, and negotiations</p>
+            </div>
+        </section>
     </div>
 
     <footer>
