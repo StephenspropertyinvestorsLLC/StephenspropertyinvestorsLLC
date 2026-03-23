@@ -1,0 +1,27 @@
+{
+  "name": "stephenspi-crm",
+  "version": "1.0.0",
+  "description": "Professional CRM system for Stephenspi LLC tire business",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "crm",
+    "leads",
+    "tire-business"
+  ],
+  "author": "Stephenspi LLC",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^8.0.3",
+    "twilio": "^5.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

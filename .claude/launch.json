@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "CRM Server (Development)",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.js"],
+      "port": 5000,
+      "autoPort": true
+    },
+    {
+      "name": "CRM Server (Production)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "port": 5000
+    }
+  ]
+}
