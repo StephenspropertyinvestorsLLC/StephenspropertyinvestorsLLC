@@ -6,7 +6,12 @@ const path = require('path');
 const https = require('https');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  credentials: false,
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '')));
 
