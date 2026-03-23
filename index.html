@@ -30,12 +30,12 @@
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0.5rem 20px;
+            padding: 2rem 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 1.5rem;
         }
 
         .logo-container {
@@ -68,13 +68,14 @@
         }
 
         .header-text .tagline {
-            font-size: 1.1rem;
+            font-size: 1.8rem;
             opacity: 1;
             font-style: italic;
-            font-weight: 600;
-            line-height: 1.5;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-weight: 700;
+            line-height: 1.6;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
             margin: 0;
+            letter-spacing: 0.3px;
         }
 
         .container {
@@ -352,7 +353,7 @@
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <img src="logo.png.png" alt="Stephens Property Investors Logo">
+                <img src="logo.png" alt="Stephens Property Investors Logo">
             </div>
             <div class="header-text">
                 <div class="tagline">I help homeowners navigate quick sales with care, clarity, and no pressure.</div>
@@ -638,7 +639,7 @@
 
     <footer>
         <p>&copy; 2024 Stephens Property Investors LLC. All rights reserved.</p>
-        <p>Questions? <a href="tel:"></a></p>
+        <p>Questions? <a href="tel:+15551234567">(555) 123-4567</a></p>
     </footer>
 
     <script>
@@ -695,7 +696,7 @@
                                 <ul style="margin: 0; padding-left: 1.5rem;">
                                     <li style="margin: 0.5rem 0;"><strong>Email Sent:</strong> Your property details have been emailed to <strong>StephenspiLLC@gmail.com</strong></li>
                                     <li style="margin: 0.5rem 0;"><strong>24-Hour Response:</strong> You'll hear from us within 24 hours with your cash offer</li>
-                                    <li style="margin: 0.5rem 0;"><strong>Questions?</strong> Call <strong></strong> anytime</li>
+                                    <li style="margin: 0.5rem 0;"><strong>Questions?</strong> Call <strong>(555) 123-4567</strong> anytime</li>
                                 </ul>
                             </div>
 
@@ -728,7 +729,7 @@
                             </div>
 
                             <p style="margin: 1.5rem 0 0 0; text-align: center; color: #666;">
-                                <strong>Questions?</strong> Call us at <a href="tel:" style="color: #0066cc; font-weight: bold; text-decoration: none;"></a>
+                                <strong>Questions?</strong> Call us at <a href="tel:+15551234567" style="color: #0066cc; font-weight: bold; text-decoration: none;">(555) 123-4567</a>
                             </p>
                         </div>
                     `;
@@ -743,7 +744,7 @@
                     throw new Error('Failed to submit');
                 }
             } catch (error) {
-                alertDiv.innerHTML = '❌ Error submitting form. Please try again or call .';
+                alertDiv.innerHTML = '❌ Error submitting form. Please try again or call (555) 123-4567.';
                 alertDiv.classList.add('error', 'show');
             }
         }
