@@ -675,7 +675,7 @@
                 const formData = new FormData(e.target);
                 const data = Object.fromEntries(formData.entries());
 
-                const response = await fetch('https://stephenspropertyinvestorsllc-production.up.railway.app/api/leads', {
+                const response = await fetch('stephenspropertyinvestorsllc-production-0fad.up.railway.app', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
