@@ -353,7 +353,7 @@
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <img src="logo.png" alt="Stephens Property Investors Logo">
+                <img src="logo.png.png" alt="Stephens Property Investors Logo">
             </div>
             <div class="header-text">
                 <div class="tagline">I help homeowners navigate quick sales with care, clarity, and no pressure.</div>
@@ -675,7 +675,7 @@
                 const formData = new FormData(e.target);
                 const data = Object.fromEntries(formData.entries());
 
-                const response = await fetch('https://stephenspropertyinvestors.com', {
+                const response = await fetch('https://your-deployed-backend-url.com/api/leads', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
